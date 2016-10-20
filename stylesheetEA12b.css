@@ -1,0 +1,47 @@
+<style>
+      caption  { 
+      		text-align: left; 
+      	}
+      thead th {	
+      		background-color: #800000; 
+      		text-align: left; 
+      		color: white;
+      		font-family: Calibri;
+      	}
+      	
+      tbody tr {	
+      		text-align: left; 
+      		background-color: #a9a9a9;
+      		color: black;
+      		font-family: Calibri;
+      		border:hidden;
+      	}
+      tfoot tr {
+      		text-align: left; 
+      		background-color: #a9a9a9;
+      		color: black;
+      		font-family: Calibri;
+      		border-left: hidden;
+      		border-right: hidden;
+      		border-bottom: 3px solid #800000;
+      	}
+      	
+      tbody td, tfoot td {	
+      		border: 1px solid #800000;
+      	}
+      	
+      table {
+      		box-shadow: 10px 10px 10px grey;
+  			border-collapse: collapse;
+      	}
+      tbody tr:nth-child(even), tfoot tr:nth-child(even) {
+			background-color: #f9f9f9 ;
+			color: black;
+		}
+	  tbody tr:hover, tfoot tr:hover { 
+  			background-color:red;
+  			color: white;
+		}
+ 
+	
+</style>
