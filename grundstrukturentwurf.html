@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stundenplaner-Grundstruktur</title>
+    <link rel="stylesheet" href="stylesheetgrundstruktur.css">
+    <script src="http://code.jquery.com/jquery-1.12.3.js"></script>
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="lightbox.js"></script>
+    <!--initialisieren von DataTable, Tabelle mittels DataTable scrollbar-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('#stundenplaner').DataTable( { 
+    	"scrollY": 200,
+        "scrollX": true,
+        "filter": false,
+        "info": false,
+        "paging": false
+    	} );
+	 } );
+</script>
+  </head>
+  <body>
+	<nav>
+  		<a href="index.html">Home</a>
+  		<a href="?????">Stundenplan erstellen</a>
+  		<a href="?????">Speichern</a>
+  		<a href="?????">Symbole mit JS einfügen</a> 
+	</nav>
+    
+    <table id="stundenplaner" width="100%">
+    <!--https://datatables.net/examples/basic_init/scroll_xy.html-->
+        <thead>
+			<tr>
+				<th>Stunde</th> 
+				<th>Montag</th>
+				<th>Dienstag</th>
+				<th>Mittwoch</th>
+				<th>Donnerstag</th>
+				<th>Freitag</th>
+				<th>Samstag</th>
+				<th>Sonntag</th>
+			</tr> 
+		</thead>
+		<tfoot>
+			<tr>
+				<td>Stunde</td> 
+				<td>Montag</td> 
+				<td>Dienstag</td> 
+				<td>Mittwoch</td> 
+				<td>Donnerstag</td> 
+				<td>Freitag</td>
+				<td>Samstag</td>
+				<td>Sonntag</td>
+			</tr>
+		</tfoot>
+		<tbody>
+			<tr>
+				<td>1.</td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>2.</td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>3.</td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>4.</td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>5.</td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>6.</td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>7.</td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>8.</td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td> 
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+	  </tbody>
+    </table>
+  <footer>
+    <nav><!--mit lightbox anzeigen-->
+  		<a href="about">Impressum</a>
+  		<a href="agb">AGB</a>
+  		<a href="contact">Kontakt</a>
+  		<a href="datapolice">Datenschutz</a>
+	</nav>
+  </footer>
+</body>
+</html>
