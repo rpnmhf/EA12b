@@ -8,10 +8,23 @@
     <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script type="text/javascript" src="lightbox.js"></script>
-    <!--initialisieren von DataTable, Tabelle mittels DataTable scrollbar-->
+    <!--initialisieren von DataTable, Tabelle mittels DataTable scrollbar,
+    https://datatables.net/examples/basic_init/hidden_columns.html
+    Die Spalten Samstag und Sonntag werden ausgeblendet-->
     <script type="text/javascript">
     $(document).ready(function() {
     $('#stundenplaner').DataTable( { 
+    		"columnDefs": [
+            {
+                "targets": [ 6 ],
+                "visible": false,
+                "searchable": false
+            },
+            {
+                "targets": [7],
+                "visible": false
+            }
+        ],
     	"scrollY": 200,
         "scrollX": true,
         "filter": false,
